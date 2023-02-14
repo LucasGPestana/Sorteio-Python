@@ -1,0 +1,20 @@
+# Feito por: André 
+# Observação: é preciso digitar ao menos 2 nomes para poder funcionar.
+
+import random
+
+participantes = []
+
+while True:
+    participante = input("Insira o nome de um participante (ou digite 'sortear' para começar o sorteio): ")
+
+    if participante.lower() == 'sortear':
+        break
+    else:
+        participantes.append(participante)
+
+if participantes:
+    vencedor = random.choice(participantes)
+    print(f"O vencedor é... {vencedor}!")
+else:
+    print("Não há participantes para o sorteio.")
