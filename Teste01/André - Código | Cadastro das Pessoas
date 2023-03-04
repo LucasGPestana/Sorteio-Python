@@ -6,9 +6,9 @@ import random
 participantes = []
 
 while True:
-    participante = input("Insira o nome de um participante (ou digite 'sortear' para começar o sorteio): ")
+    participante = input("Insira o nome de um participante (ou digite 'sortear' para começar o sorteio): ").lower()
 
-    if participante.lower() == 'sortear':
+    if participante == 'sortear':
         break
     else:
         participantes.append(participante)
